@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-view></router-view>
+    <van-button type="primary" to="/login">去登录</van-button>
   </div>
 </template>
 
