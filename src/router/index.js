@@ -5,6 +5,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    redirect: '/layout/my'
+  },
+  {
     path: '/layout',
     component: () => import('@/views/Layout'),
     children: [
@@ -29,6 +33,14 @@ const routes = [
   {
     path: '/login',
     component: () => import('@/views/Login')
+  },
+  {
+    path: '/favorite',
+    component: () => import('@/views/Favorite')
+  },
+  {
+    path: '/rent',
+    component: () => import('@/views/Rent')
   }
 ]
 
